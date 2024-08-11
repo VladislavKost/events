@@ -77,7 +77,7 @@ export class Game {
       loses.textContent = parseInt(loses.textContent) + 1;
       if (parseInt(loses.textContent) > 4) {
         alert(
-          `Игра окончена! Вы проиграли! Ваш результат: ${loses.textContent}`,
+          `Игра окончена! Вы проиграли! Ваш результат: ${document.querySelector(".wins").textContent}`,
         );
         this.restartGame();
       }
